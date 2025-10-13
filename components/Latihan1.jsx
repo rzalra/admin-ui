@@ -1,4 +1,4 @@
-// src/assets/components/Latihan1.jsx
+
 'use client';
 import React, { useState } from 'react';
 
@@ -6,7 +6,7 @@ export default function Latihan1() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="border-2 border-gray-200 rounded-lg p-4 mb-8">
+    <section className="p-4 mb-8">
       <h2 className="text-xl font-bold mb-4 text-gray-700">LATIHAN 1: Header</h2>
 
       <nav className="bg-white p-4 shadow-md rounded-md" aria-label="Main navigation">
@@ -15,9 +15,25 @@ export default function Latihan1() {
 
           {/* Desktop links */}
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring" aria-current="page">Home</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring">About</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring">Contact</a>
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring"
+              aria-current="page"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="text-gray-600 hover:text-gray-900 focus:outline-none focus:ring"
+            >
+              Contact
+            </a>
           </div>
 
           {/* Hamburger for mobile */}
@@ -36,9 +52,24 @@ export default function Latihan1() {
 
         {open && (
           <div id="mobile-menu" className="md:hidden mt-2 space-y-1 px-2">
-            <a href="#" className="block text-gray-600 hover:text-gray-900 py-2 px-2 rounded">Home</a>
-            <a href="#" className="block text-gray-600 hover:text-gray-900 py-2 px-2 rounded">About</a>
-            <a href="#" className="block text-gray-600 hover:text-gray-900 py-2 px-2 rounded">Contact</a>
+            <a
+              href="#"
+              className="block text-gray-600 hover:text-gray-900 py-2 px-2 rounded"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="block text-gray-600 hover:text-gray-900 py-2 px-2 rounded"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="block text-gray-600 hover:text-gray-900 py-2 px-2 rounded"
+            >
+              Contact
+            </a>
           </div>
         )}
       </nav>

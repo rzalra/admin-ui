@@ -4,7 +4,7 @@ import PricingCard from './PricingCard.jsx';
 
 export default function Latihan3() {
   return (
-    <section className="border-2 border-gray-200 rounded-lg p-4 mb-8">
+    <section className="p-4 mb-8">
       <h2 className="text-xl font-bold mb-4 text-gray-700">LATIHAN 3: Pricing Table</h2>
 
       <div className="flex flex-col md:flex-row justify-center items-stretch gap-4">

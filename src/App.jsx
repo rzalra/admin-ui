@@ -1,11 +1,11 @@
 // src/app.jsx
 'use client';
 import React from 'react';
-import Latihan1 from './components/Latihan1';
-import Latihan2 from './components/Latihan2.jsx';
-import Latihan3 from './components/Latihan3';
-import Latihan4 from './components/Latihan4';
-import Latihan5 from './components/Latihan5';
+import Latihan1 from '../components/Latihan1';
+import Latihan2 from '../components/Latihan2';
+import Latihan3 from '../components/Latihan3';
+import Latihan4 from '../components/Latihan4';
+import Latihan5 from '../components/Latihan5';
 
 export default function App() {
   return (
@@ -14,7 +14,6 @@ export default function App() {
         <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
           Hasil Latihan Pemrograman Sisi Klien
         </h1>
-
         <Latihan1 />
         <Latihan2 />
         <Latihan3 />
