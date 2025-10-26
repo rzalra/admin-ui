@@ -12,7 +12,7 @@ function App() {
           <form action="">
             <div className="mb-6">
               <label htmlFor="email" className="block text-sm text-gray-600 mb-2">
-                Email Address
+                 Email Address
               </label>
               <input
                 type="email"
