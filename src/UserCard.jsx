@@ -1,12 +1,12 @@
-// Lokasi: src/UserCard.jsx
+
 
 import React, { useState } from "react";
 
 function UserCard(props) {
-  // 1. Gunakan 'Rest Parameter' (...rest) untuk properti sisa [cite: 449]
+
   const { name, email, street, city, ...rest } = props;
   
-  // 2. State untuk tombol (kode ini sudah ada di file Anda)
+
   const [clicked, setClicked] = useState(false);
 
   return (
@@ -19,14 +19,14 @@ function UserCard(props) {
         <span className="font-medium">Address:</span> {street}, {city}
       </p>
 
-      {/* 3. Tampilkan data tambahan dari 'rest' parameter [cite: 622-626] */}
+      {}
       {Object.entries(rest).map(([key, value]) => (
         <p key={key} className="text-gray-600">
           <span className="font-medium capitalize">{key}:</span> {value}
         </p>
       ))}
 
-      {/* 4. Tombol dengan state */}
+      {}
       <button
         className={`mt-4 text-white p-2 rounded-md ${
           clicked ? "bg-green-600" : "bg-gray-500" 
