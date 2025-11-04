@@ -26,7 +26,7 @@ function UserCard(props) {
 
         <button 
             className={`text-white p-2 rounded-md
-                ${clicked ? "bg-special-green" : "bg-gray-01"}
+                ${clicked ? "bg-special-red-2" : "bg-gray-01"}
             `}
             onClick={() => setClicked(true)}
         >
