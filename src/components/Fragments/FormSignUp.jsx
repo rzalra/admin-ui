@@ -1,13 +1,20 @@
 import React from "react";
 import Button from "../Elements/Button";
-import CheckBox from "../Elements/CheckBox";
 import LabeledInput from "../Elements/LabeledInput";
 import { Link } from "react-router-dom"; // Import Link dari React Router
 
-const FormSignIn = () => {
+const FormSignUp = () => {
   return (
     <form action="">
-      <div className="mb-6">
+      <div className="mb-4">
+        <LabeledInput
+          label="Name"
+          type="text"
+          placeholder="Tanzir Rahman"
+          name="name"
+        />
+      </div>
+      <div className="mb-4">
         <LabeledInput
           label="Email Address"
           type="email"
@@ -15,7 +22,8 @@ const FormSignIn = () => {
           name="email"
         />
       </div>
-      <div className="mb-6 relative">
+      
+      <div className="mb-4 relative">
         <LabeledInput
           label="Password"
           type="password"
@@ -32,16 +40,18 @@ const FormSignIn = () => {
       </div>
 
       <div className="mb-6">
-        <CheckBox label="Keep me signed in" name="status" />
+        <p className="text-xs text-slate-500">
+          By continuing, you agree to our <span className="text-teal-600 font-bold cursor-pointer">terms of service.</span>
+        </p>
       </div>
 
-      <Button classname="w-full bg-teal-600 text-white hover:bg-teal-700">Login</Button>
+      <Button classname="w-full bg-teal-600 text-white hover:bg-teal-700">Sign up</Button>
 
       {/* Divider */}
       <div className="my-6 flex items-center justify-center relative">
         <div className="border-t border-slate-300 w-full absolute"></div>
         <span className="px-3 bg-white relative z-10 text-slate-400 text-sm">
-          or sign in with
+          or sign up with
         </span>
       </div>
 
@@ -62,15 +72,15 @@ const FormSignIn = () => {
         </span>
       </Button>
 
-      {/* Link Navigasi ke Register */}
+      {/* Link Navigasi ke Login */}
       <p className="text-sm mt-5 text-center text-slate-500">
-        Don't have an account?{" "}
-        <Link to="/register" className="font-bold text-teal-600 hover:underline">
-          Sign up
+        Already have an account?{" "}
+        <Link to="/login" className="font-bold text-teal-600 hover:underline">
+          Sign in here
         </Link>
       </p>
     </form>
   );
 };
 
-export default FormSignIn;
+export default FormSignUp;

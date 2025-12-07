@@ -1,23 +1,35 @@
 import React from "react";
 
-function LabeledInput({ label, id, type = "text", ...rest }) {
+const Input = (props) => {
+  const { type, placeholder, name } = props;
   return (
-    <div className="mb-4">
-      <label
-        htmlFor={id}
-        className="block text-sm text-gray-600 mb-2"
-      >
-        {label}
-      </label>
+    <input
+      type={type}
+      className="text-sm border rounded w-full py-2 px-3 text-slate-700 placeholder: opacity-50"
+      placeholder={placeholder}
+      name={name}
+      id={name}
+    />
+  );
+};
 
-      <input
-        id={id}
-        type={type}
-        className="text-sm rounded-md w-full bg-special-mainBg border border-gray-200 text-gray-700 py-2 px-3 focus:border-gray-400 focus:outline-none focus:ring-0"
-        {...rest}
-      />
+const Label = (props) => {
+  const { htmlFor, children } = props;
+  return (
+    <label htmlFor={htmlFor} className="block text-slate-700 text-sm font-bold mb-2">
+      {children}
+    </label>
+  );
+};
+
+const LabeledInput = (props) => {
+  const { label, name, type, placeholder } = props;
+  return (
+    <div className="mb-6">
+      <Label htmlFor={name}>{label}</Label>
+      <Input name={name} type={type} placeholder={placeholder} />
     </div>
   );
-}
+};
 
 export default LabeledInput;
