@@ -2,10 +2,16 @@ import React from "react";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import SignInPage from "./Pages/SignIn";
 import SignUpPage from "./Pages/SignUp";
-import ErrorPage from "./Pages/404"; // Pastikan nama file sesuai (404.jsx atau error.jsx)
+import ErrorPage from "./Pages/404";
+import dashboardPage from "./Pages/dashboard";
 
 const App = () => {
   const myRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <dashboardPage />,
+      errorElement: <ErrorPage />,
+    },
     {
       path: "/",
       element: (
