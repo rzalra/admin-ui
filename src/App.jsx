@@ -2,8 +2,8 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import halaman yang sudah ada
-import SignInPage from "./Pages/SignIn";
-import SignUpPage from "./pages/SignUp";
+import SignInPage from "./pages/SignIn";
+import SignUpPage from "./Pages/SignUp";
 import DashboardPage from "./Pages/dashboard";
 import BalancePage from "./Pages/BalancePage";
 import ErrorPage from "./Pages/404";
