@@ -1,14 +1,13 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Import halaman yang sudah ada
-import SignInPage from "./pages/SignIn";
+import SignInPage from "./Pages/SignIn";
 import SignUpPage from "./Pages/SignUp";
-import DashboardPage from "./Pages/dashboard";
-import BalancePage from "./Pages/BalancePage";
-import ErrorPage from "./Pages/404";
+import DashboardPage from "./Pages/dashboard"; 
+import BalancePage from "./Pages/BalancePage"; 
+import ErrorPage from "./Pages/404";           
 
-// 1. IMPORT HALAMAN EXPENSE (Soal No. 3)
+// 1. IMPORT HALAMAN EXPENSE
 import ExpensePage from "./Pages/ExpensePage";
 
 const App = () => {
@@ -22,7 +21,7 @@ const App = () => {
       path: "/balance",
       element: <BalancePage />,
     },
-    // 2. TAMBAHKAN ROUTE UNTUK EXPENSES DI SINI
+    // 2. ROUTE UNTUK EXPENSES
     {
       path: "/expenses",
       element: <ExpensePage />,
