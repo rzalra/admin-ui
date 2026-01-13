@@ -2,11 +2,11 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import halaman yang sudah ada
-import SignInPage from "./pages/signin";
-import SignUpPage from "./pages/signup";
-import DashboardPage from "./pages/dashboard";
-import BalancePage from "./pages/BalancePage";
-import ErrorPage from "./pages/404";
+import SignInPage from "./Pages/SignIn";
+import SignUpPage from "./pages/SignUp";
+import DashboardPage from "./Pages/dashboard";
+import BalancePage from "./Pages/BalancePage";
+import ErrorPage from "./Pages/404";
 
 // 1. IMPORT HALAMAN EXPENSE (Soal No. 3)
 import ExpensePage from "./Pages/ExpensePage";

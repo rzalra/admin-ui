@@ -14,7 +14,6 @@ export const loginService = async (email, password) => {
     throw error.response?.data || { msg: "Login gagal" };
   }
 };
-<<<<<<< HEAD
 
 export const registerService = async (name, email, password) => {
   try {
@@ -28,5 +27,3 @@ export const registerService = async (name, email, password) => {
     throw error.response?.data || { msg: "Register gagal" };
   }
 };
-=======
->>>>>>> 6f7900346ccc9ba0b8d01b7e12d96ae8e7018219
